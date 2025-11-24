@@ -1,9 +1,16 @@
 body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  color: white;
   font-family: Arial, sans-serif;
-  padding: 20px;
-  background: #f7f7f7;
+  background: linear-gradient(-45deg, #6a11cb, #2575fc, #4158d0, #c850c0);
+  background-size: 400% 400%;
+  animation: gradientAnimation 12s ease infinite;
 }
 
-h1 {
-  color: #333;
+@keyframes gradientAnimation {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
