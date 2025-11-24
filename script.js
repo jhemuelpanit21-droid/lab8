@@ -27,3 +27,17 @@ console.log("Age:", student.age);
 console.log("Info:", student.displayInfo());
 
 
+
+// ------------------------------------------
+// Part 2: Working with JSON
+// ------------------------------------------
+
+const jsonString = JSON.stringify(student);
+console.log("JSON String:", jsonString);
+
+const parsedStudent = JSON.parse(jsonString);
+console.log("Parsed Object:", parsedStudent);
+
+// ------------------------------------------
+// Part 3: Manipulating the Object
+// ------------------------------------------
