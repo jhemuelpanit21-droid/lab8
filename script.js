@@ -41,3 +41,8 @@ console.log("Parsed Object:", parsedStudent);
 // ------------------------------------------
 // Part 3: Manipulating the Object
 // ------------------------------------------
+
+// Object destructuring
+const { name, courses } = student;
+console.log("Destructured Name:", name);
+console.log("Destructured Courses:", courses);
