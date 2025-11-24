@@ -66,3 +66,24 @@ console.log("Cloned Student:", studentClone);
 const newCourses = ["Databases", "Cloud Computing"];
 const mergedCourses = [...student.courses, ...newCourses];
 console.log("Merged Courses:", mergedCourses);
+
+
+
+// ------------------------------------------
+// Part 5: Object Methods
+// ------------------------------------------
+
+// Add a new course dynamically
+student.addCourse("Computer Security");
+console.log("Updated Courses:", student.courses);
+
+// Count total courses
+console.log("Total Courses:", student.totalCourses());
+
+
+// ------------------------------------------
+// Bonus Task: Average Score Using reduce()
+// ------------------------------------------
+
+const average = scores.reduce((sum, val) => sum + val, 0) / scores.length;
+console.log("Average Score:", average);
