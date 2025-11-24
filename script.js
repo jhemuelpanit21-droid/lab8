@@ -46,3 +46,23 @@ console.log("Parsed Object:", parsedStudent);
 const { name, courses } = student;
 console.log("Destructured Name:", name);
 console.log("Destructured Courses:", courses);
+
+// Array destructuring
+const scores = [85, 92, 78, 90];
+const [firstScore, secondScore] = scores;
+console.log("First Score:", firstScore);
+console.log("Second Score:", secondScore);
+
+
+// ------------------------------------------
+// Part 4: Spread Operator
+// ------------------------------------------
+
+// Clone student object
+const studentClone = { ...student, graduationYear: 2026 };
+console.log("Cloned Student:", studentClone);
+
+// Merge arrays
+const newCourses = ["Databases", "Cloud Computing"];
+const mergedCourses = [...student.courses, ...newCourses];
+console.log("Merged Courses:", mergedCourses);
